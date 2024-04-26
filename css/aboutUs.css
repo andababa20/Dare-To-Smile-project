@@ -1,0 +1,299 @@
+﻿.white {
+    padding-top: 35px;
+    background-color: white;
+    color: black;
+    opacity: 0.6;
+    height: 520px;
+    text-align: center;
+}
+
+.green {
+    background-image: url('../images/bigsmile.jpg');
+    background-size: cover;
+    width: 1017px;
+    height: 500px;
+}
+
+.my-box {
+    width: 800px;
+    height: 170px;
+    background-color: grey;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+.center-container {
+    display: grid;
+    place-items: center;
+    height: 50vh;
+}
+
+.grey {
+    background-color: grey;
+    color: white;
+    background-size: cover;
+    width: 1017px;
+    height: 390px;
+    padding-top: 40px;
+}
+
+.dropbtn {
+    background-color: dimgray;
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+.dropbtn img {
+   width: 30px;
+   height: 30px;
+   margin-right: 10px;
+ }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    min-width: 280px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    right: auto;
+    left: 0;
+}
+
+.dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.spacebtn {
+    width: 8px;
+}
+
+.space {
+    height: 5px;
+    padding-right: 80px;
+}
+
+
+.dropdownclass {
+    width: 700px;
+    height: 200px;
+    padding: 5px;
+    text-align: left;
+    opacity: 0.5;
+}
+
+text-buttons-and-image-container {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+.text-and-buttons {
+    text-align: center;
+    margin-right: 20px;
+}
+
+.button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container {
+    display: inline-flex;
+    align-items: center;
+    border: 0px solid #ccc;
+    border-radius: 8px;
+    padding: 12px 70px;
+    width: 1300px;
+}
+
+ .container img {
+    width: 330px;
+    height: auto;
+    border: 0px solid #ccc;
+    border-radius: 8px;
+ }
+
+.padImage {
+    width: 340px;
+    height: 220px;
+    border-radius: 16px;
+    padding-left: 190px;
+    padding-top:30px;
+}
+
+.container-final {
+    background-color: black;
+    opacity: 0.6;
+    width: 1017px;
+}
+
+.divfooter {
+    background-color: black;
+    opacity: 0.6;
+    width: 1017px;
+    height: 20px;
+    border-top: 2px solid dimgray;
+    padding: 20px;
+}
+
+.custom-icon {
+    font-size: 15px;
+    padding-right: 14px;
+}
+
+.arrow-down {
+    font-size: 20px;
+}
+
+.contact {
+    width: 600px;
+    font-size: 10px;
+    padding-top: 80px;
+    padding-left: 150px;
+}
+
+.text-contact {
+    padding: 20px;
+}
+
+.p-whiteSection {
+    padding-left: 150px;
+    padding-right: 160px;
+}
+
+
+.social {
+    font-size: 25px;
+    color: white;
+    text-align: left;
+    padding-left: 140px;
+    padding-top: 40px;
+    opacity: 0.9;
+}
+
+.numbers {
+    color: white;
+    font-size: 25px;
+    font-family: Arial;
+    padding-left: 490px;
+}
+
+.first-head {
+    padding-top: 50px;
+    padding-left: 50px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.second-head {
+    font-family: sans-serif;
+    color: white;
+    padding-left: 50px;
+    font-weight: bold;
+}
+
+.first-paragraph {
+    padding-top: 40px;
+    padding-left: 90px;
+    width: 780px;
+    padding-left: 330px;
+}
+
+.hidden {
+    display: none;
+    height: 120px;
+    width: 300px;
+    font-size: 10px;
+    text-align: left;
+    text-align: left;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid white;
+}
+
+.hidden1 {
+    display: none;
+    height: 80px;
+    width: 300px;
+    font-size: 10px;
+    text-align: left;
+    text-align: left;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid white;
+}
+
+.fa-solid {
+    color: white;
+    background-color: grey;
+}
+
+.custom-button {
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid white;
+    width: 300px;
+    text-align: left;
+    font-size: 12px;
+}
+
+.nav-item {
+    padding-left: 13px;
+}
+
+.img-link {
+    display: inline-block;
+    width: 90px;
+    height: 15px;
+    padding-bottom: 25px;
+    background-image: url('../images/dareToSmileIcon.png');
+    background-size: cover;
+}
+
+.iconSpace {
+    padding-left: 227px;
+}
+
+.iconSpace1 {
+    padding-left: 225px;
+}
+

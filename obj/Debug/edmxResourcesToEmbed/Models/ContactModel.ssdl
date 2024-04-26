@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SmileDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SmileDb.dbo.ContactFormular' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ContactFormular">
+    <Key>
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="Name" Type="nchar" MaxLength="100" Nullable="false" />
+    <Property Name="Phone" Type="int" />
+    <Property Name="Email Address" Type="nchar" MaxLength="50" />
+    <Property Name="Enquiry" Type="nchar" MaxLength="100" />
+  </EntityType>
+  <EntityContainer Name="SmileDbModelStoreContainer">
+    <EntitySet Name="ContactFormular" EntityType="Self.ContactFormular" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ContactFormular].[Name] AS [Name], 
+    [ContactFormular].[Phone] AS [Phone], 
+    [ContactFormular].[Email Address] AS [Email Address], 
+    [ContactFormular].[Enquiry] AS [Enquiry]
+    FROM [dbo].[ContactFormular] AS [ContactFormular]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,30 @@
+﻿@model SmileT.Models.ContactData
+
+@using (Html.BeginForm("SubmitContactForm", "Contact", FormMethod.Post))
+{
+        <input type="text" id="labelInfo" name="name" placeholder="Name" required>
+        <p></p>
+        <i class="fa-solid fa-horizontal-rule"></i>
+        <label for="phone"></label>
+        <input type="text" id="labelInfo" name="phone" placeholder="Phone" required>
+        <p></p>
+        <label for="email"></label>
+        <input type="email" id="labelInfo" name="email" placeholder="Email Address" required>
+        <p></p>
+        <label for="enquiry"></label>
+        <textarea id="enquiry" name="enquiry" placeholder="Enquiry" required></textarea>
+        <p></p>
+        <label for="check"></label>
+        <input type="checkbox" id="checkbox" name="checkbox" required>
+        <span class="styleCheckBoxText">
+            I grant permission for my data to be utilized in compliance with the privacy policy.
+        </span>
+        <p></p>
+        <label for="check"></label>
+        <input type="checkbox" id="checkbox" name="checkbox" required>
+        <span class="styleCheckBoxText">
+            I authorize the use of my personal data for marketing purposes.
+        </span>
+        <p></p>
+        <button class="submitButton" type="submit" placeholder="Enquiry">Send Enquiry</button>
+}

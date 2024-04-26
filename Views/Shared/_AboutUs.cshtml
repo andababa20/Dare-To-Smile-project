@@ -1,0 +1,171 @@
+﻿<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/aboutUs.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/general.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="green">
+        <header class="header-font">
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3">
+                <div class="container-fluid">
+                    @Html.ActionLink(" ", "Index", "Home", new { }, new { @class = "img-link" })
+                    <span class="navbar-toggler-icon"></span>
+                    <div class="navbar-collapse collapse d-sm-inline-flex">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                @Html.ActionLink("ABOUT US", "AboutIndex", "AboutUs")
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </li>
+                            <li class="nav-item"> @Html.ActionLink("OUR SERVICES", "OurServicesIndex", "OurServices") </li>
+                            <li class="nav-item"> @Html.ActionLink("TEAM ", "IndexTeam", "Team") </li>
+                            <li class="nav-item"> @Html.ActionLink("PRICES ", "PricesIndex", "Prices")
+                            <li class="nav-item"> @Html.ActionLink("APPOINTMENTS", "Index", "Calendar") </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="social">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <span class="numbers"> 0208 653 3545</span>
+        </div>
+        <div class="headText">
+            <h2 class="first-head">
+                Dare To Smile
+            </h2>
+            <h2 class="second-head">
+                Your Smile's Best Friend
+            </h2>
+            <p class="first-paragraph">
+                At Dare To Smile, we’re passionate about enhancing your natural beauty and confidence.
+                Discover the magic behind your radiant smile.
+            </p>
+        </div>
+    </div>
+    <div class="white">
+        <H2>
+            History
+        </H2>
+        <p class="p-whiteSection">
+            Dare To Smile is not just a dental practice; it’s a well-established, family-run institution with a rich history that spans several decades. Our roots can be traced back to the 1920s when we first set up shop on this site. Over the years, we have become an integral part of the community, serving generations of families in the region. Some of our dedicated dentists have been a part of the Dare To Smile family since the mid-1980s, which speaks volumes about our commitment and expertise.
+        </p>
+        <p class="p-whiteSection">
+            Our primary goal at Dare To Smile is to provide our patients with consistently high-quality dental care. We understand that oral health is a vital aspect of overall well-being, and we take our responsibility seriously. Whether you require NHS or private dental services, we are here to cater to your needs and ensure you leave our practice with a confident and radiant smile.
+        </p>
+        <p class="p-whiteSection">
+            Our modern and welcoming environment is designed to make your dental visits as comfortable and stress-free as possible. We believe that a friendly and soothing atmosphere is essential for reducing anxiety and ensuring a positive patient experience. When you walk through our doors at Dare To Smile , you become a valued member of our practice, where we are dedicated to your oral health and overall well-being.
+        </p>
+        <p class="p-whiteSection">
+            The combination of our long-standing presence in the community, experienced dentists, and commitment to delivering high-quality dental care sets us apart. At Dare To Smile, we embrace the latest advancements in dental technology and practices to provide you with the best treatment options available. Whether you need a routine check-up, cosmetic dental work, or more complex procedures, we have the expertise to meet your specific needs.
+        </p>
+        <p class="p-whiteSection">
+            We are proud to be a part of your journey to achieving and maintaining a healthy, beautiful smile. Your oral health is our top priority, and we look forward to serving you with the same dedication and care that has defined Dare To Smile for generations.
+        </p>
+    </div>
+    <div class="grey">
+        <h2 class="elementor-heading-title elementor-size-default"> Why choose Dare To Smile</h2>
+        <div class="container">
+            <div class="text-and-buttons">
+                <p></p>
+                <button class="custom-button">
+                    Our Aim
+                    <span class="iconSpace">
+                        <i class="fa-solid fa-arrow-down" onclick="toggleText()"></i>
+                    </span>
+                </button>
+                <div id="hiddenText" class="hidden">
+                    Our aim is to provide a friendly service for all the family, with up-to-date advice and treatment and to make every experience at the practice as pleasurable as possible. We know how important it is to love your smile.
+
+                    We’ll break down the cost,
+                    length and number of appointments as well as all precautions you may need to take during your treatment in detail so we can be sure you’ll feel at ease & relaxed at our practice.
+                </div>
+                <p></p>
+                <button class="custom-button">
+                    We Offer
+                    <span class="iconSpace1">
+                        <i class="fa-solid fa-arrow-down" onclick="toggleText1()"></i>
+                    </span>
+                </button>
+                <div id="hiddenText1" class="hidden1">
+                    If your looking for a new smile, or would like to know more about the private treatments we offer, we can give you the opportunity to visit the practice, meet the team and discuss your treatment needs with a free consultation.
+                </div>
+                <p></p>
+            </div>
+            <div class="padImage">
+                <img src="~/images/smiles.jpeg" />
+            </div>
+        </div>
+    </div>
+    <div class="mainContent">
+        <div class="text-and-image">
+            <div class="text">
+                <h2 class="generalHead">Contact Us</h2>
+                <p class="generalText"> To connect with our team for scheduling or cancelling appointments, or to inquire as a new or returning patient, please reach out to us.
+            </div>
+            <div class="dataSection">
+                <section id="contact">
+                    <div>
+                        @Html.Partial("_ContactForm")
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="final">
+        <div class="containerfooter">
+            <div class="dimension">
+                <p class="dimensionParagraph">Dare To Smile</p>
+                <p>
+                    We aim to deliver consistently high quality NHS and private dental care, in a friendly and modern environment.
+                </p>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="containercenter">
+                <p class="secondContainer">
+                    Menu
+                <p></p>
+                @Html.ActionLink("Services", "OurServicesIndex", "OurServices")
+                <p></p>
+                @Html.ActionLink("Prices ", "PricesIndex", "Prices")
+                <p></p>
+                @Html.ActionLink("Appointments", "CalendarIndex", "Calendar")
+            </div>
+            <div class="containerleft">
+                <p class="secondContainer">
+                    Contact
+                <p></p>
+                020 8653 3535
+                <p></p>
+                66 Sannicoara, Apahida, Cluj, Romania
+                <p></p>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-final">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class="divfooter">
+        <a class="space" asp-area="" asp-controller="Home" asp-action="Privacy">@Html.ActionLink("Complaints Procedure", "ComplaintsProcedureIndex", "ComplaintsProcedure")</a>
+        <a class="space" asp-area="" asp-controller="Home" asp-action="Privacy">@Html.ActionLink("Copyright (C) All Rights Reserved – Web Design by Anda Baba", "Index", "Home")</a>
+        <a class="space" asp-area="" asp-controller="Home" asp-action="Privacy">@Html.ActionLink("Privacy Policy", "PrivacyIndex", "Privacy")</a>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
+

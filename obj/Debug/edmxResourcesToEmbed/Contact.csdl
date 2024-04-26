@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SmileDbModel2" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ContactFormular">
+    <Key>
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Phone" Type="Int32" />
+    <Property Name="Email_Address" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="Enquiry" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="SmileDbEntities3" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ContactFormulars" EntityType="Self.ContactFormular" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,145 @@
+﻿<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/complaintsProcedure.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="green">
+        <header class="header-font">
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3">
+                <div class="container-fluid">
+                    @Html.ActionLink(" ", "Index", "Home", new { }, new { @class = "img-link" })
+                    <span class="navbar-toggler-icon"></span>
+                    <div class="navbar-collapse collapse d-sm-inline-flex">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item"> @Html.ActionLink("ABOUT US", "AboutIndex", "AboutUs") </li>
+                            <li class="nav-item"> @Html.ActionLink("OUR SERVICES", "OurServicesIndex", "OurServices")</li>
+                            <li class="nav-item"> @Html.ActionLink("TEAM ", "IndexTeam", "Team") </li>
+                            <li class="nav-item"> @Html.ActionLink("PRICES ", "PricesIndex", "Prices") </li>
+                            <li class="nav-item"> @Html.ActionLink("APPOINTMENTS", "Index", "Calendar") </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="darkGray">
+        <h2>Complaints Procedure</h2>
+    </div>
+    <div class="white">
+        <p>Practice Code for Patients Complaints</p>
+        <p class="p-whiteSection">
+            In this practice we take complaints very seriously indeed and try to ensure that all our patients are pleased with their experience of our service. When patients complain, they are dealt with courteously and promptly so that the matter is resolved as quickly as possible. This procedure is based on these objectives. Our aim is to react to complaints in the way in which we would want our complaint about a service to be handled. We learn from every mistake that we make and we respond to customers concerns in a caring and sensitive way.
+        </p>
+
+        <ol>
+            <li>
+                The person responsible for dealing with any complaint about the service which we provide is the practice manager.
+            </li>
+            <li>
+                If a patient complains on the telephone or at the reception desk, we will listen to their complaint and offer to refer him or her to the practice manager immediately. If your manager is not available at the time, then the patient will be told when they will be able to talk to the practice manager and arrangements will be made for this to happen. The member of staff will take brief detail of the complaint and pass them on. If we cannot arrange this within a reasonable period or if the patient does not wish to wait to discuss the matter, arrangements will be made for someone else to deal with it.
+            </li>
+            <li>
+                If the patient complaints in writing or e-mail it will be passed on immediately to the Complaints Manager.
+            </li>
+            <li>
+                If the complaint is about any aspect of clinical care or associated charges it will normally be referred to the dentist, unless the patient does not want this to happen.
+            </li>
+            <li>
+                We acknowledge the patients’ complaint in writing and enclose a copy of this code of practice as soon as possible, normally within 3 working days. We will seek to investigate the complaint within ten working days of receipt to give an explanation of the circumstances which led to the complaint. If the patient does not
+                wish to meet us, then we attempt to talk to them on the telephone. If we are unable to investigate the complaint within ten working days we will notify the patient, giving reasons for the delay and a likely period to when the investigation will be completed.
+            </li>
+            <li>
+                We will confirm the decision about the complaint in writing immediately after completing our investigation.
+            </li>
+            <li>
+                Proper and comprehensive records are kept of any complaint received.
+            </li>
+            <li>
+                If the patient is not satisfied with the result of our procedure the complaint may be referred to:<br />
+            </li>
+        </ol>
+        <p>
+            For complaints about NHS treatment:<br />
+            NHS England, PO box 16738, Redditch B97 9PT ( Email- England.contactus@nhs.net)
+            The Parliamentary and Health Service Ombudsman, Milbank Tower, Millbank, London SW1P 4QP (0345 015
+            4033 or www.ombudsman.org.uk)
+            For Complaints about private treatment:
+            Dental Complaints Service, Stephenson House, 2 Cherry Orchard Road, Croydon, CR0 6BA (020 8253 0800).
+        </p>
+        <p>
+            The practice treats breaches of confidentiality very seriously. No team member shall knowingly misuse any confidential information or allow others to do so. Non-compliance with this policy may result in a disciplinary action.
+        </p>
+        <p>
+            Dr Shaimil Patel and Shyam Shastri are the Data controllers, Caldicott Guardian and Senior Risk Information Officers responsible for keeping secure the information about you that we hold. Out Data Protection Officer is Alison Frater.
+        </p>
+    </div>
+    <div class="mainContent">
+        <div class="textC-and-image">
+            <div class="textC">
+                <h2 class="generalHeadc">Contact Us</h2>
+                <p class="generalTextc"> To connect with our team for scheduling or cancelling appointments, or to inquire as a new or returning patient, please reach out to us.
+            </div>
+            <div class="dataSection">
+                <section id="contact">
+                    <div>
+                        @Html.Partial("_ContactForm")
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="final">
+        <div class="containerfooter">
+            <div class="dimension">
+                <p class="dimensionParagraph">Dare To Smile</p>
+                <p>
+                    We aim to deliver consistently high quality NHS and private dental care, in a friendly and modern environment.
+                </p>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="containercenter">
+                <p class="secondContainer">
+                    Menu
+                <p></p>
+                @Html.ActionLink("Services", "OurServicesIndex", "OurServices")
+                <p></p>
+                @Html.ActionLink("Prices ", "PricesIndex", "Prices")
+                <p></p>
+                @Html.ActionLink("Appointments", "CalendarIndex", "Calendar")
+            </div>
+            <div class="containerleft">
+                <p class="secondContainer">
+                    Contact
+                <p></p>
+                020 8653 3535
+                <p></p>
+                66 Sannicoara, Apahida, Cluj, Romania
+                <p></p>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-final">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class="divfooter">
+        <a class="space" asp-area="" asp-controller="Home" asp-action="Privacy">@Html.ActionLink("Complaints Procedure", "ComplaintsProcedureIndex", "ComplaintsProcedure")</a>
+        <a class="space" asp-area="" asp-controller="Home" asp-action="Privacy">@Html.ActionLink("Copyright (C) All Rights Reserved – Web Design by Anda Baba", "Index", "Home")</a>
+        <a class="space" asp-area="" asp-controller="Home" asp-action="Privacy">@Html.ActionLink("Privacy Policy", "PrivacyIndex", "Privacy")</a>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
+

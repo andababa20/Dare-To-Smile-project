@@ -1,0 +1,197 @@
+﻿<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/ourServices.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="green">
+        <header class="header-font">
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3">
+                <div class="container-fluid">
+                    @Html.ActionLink(" ", "Index", "Home", new { }, new { @class = "img-link" })
+                    <span class="navbar-toggler-icon"></span>
+                    <div class="navbar-collapse collapse d-sm-inline-flex">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                @Html.ActionLink("ABOUT US", "AboutIndex", "AboutUs")
+                            </li>
+                            <li class="nav-item">
+                                @Html.ActionLink("OUR SERVICES", "OurServicesIndex", "OurServices")
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </li>
+                            <li class="nav-item"> @Html.ActionLink("TEAM ", "IndexTeam", "Team") </li>
+                            <li class="nav-item"> @Html.ActionLink("PRICES ", "PricesIndex", "Prices") </li>
+                            <li class="nav-item"> @Html.ActionLink("APPOINTMENTS", "Index", "Calendar") </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="social">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <span class="numbers"> 0208 653 3545</span>
+        </div>
+        <div class="headText">
+            <h2 class="first-head">
+                Dare To Smile:Our Services
+            </h2>
+            <p class="first-paragraph">
+                We provide a wide range of professional services to meet your needs.
+                We promise to provide every service with a smile and to your highest level of satisfaction.
+            </p>
+        </div>
+    </div>
+    <p class="fontParagraph">Our Services</p>
+    <div class="grey">
+        <div class="text-and-image">
+            <div class="text">
+                <h2 class="generalHead">GENERAL DENTISTRY</h2>
+                <p class="generalText">
+                    At Dare To Smile, we take a comprehensive approach to oral health, focusing on prevention and early detection.
+                    Our team provides personalised treatment plans to help you maintain good oral health and a great smile. We cover cavity prevention and gum health to ensure your overall well-being.
+                </p>
+            </div>
+            <div class="images">
+                <img src="~/images/smiles.jpeg">
+            </div>
+        </div>
+        <div class="secondText-and-image">
+            <div class="secondImages">
+                <img src="~/images/implant.jpg">
+            </div>
+            <div class="secondText">
+                <h2 class="generalHead">DENTAL IMPLANTS</h2>
+                <p class="generalText">
+                    Our dental implant procedures go beyond aesthetics, providing a lasting solution for tooth loss that improves both function and appearance. We are experts in implant dentistry, helping you regain the confidence to eat, speak, and express yourself freely.
+                </p>
+            </div>
+        </div>
+        <div class="thirdtext-and-image">
+            <div class="thirdText">
+                <h2 class="generalHead">HYGIENIST TREATMENTS</h2>
+                <p class="generalText">
+                    Our professional hygienist treatments ensure your teeth and gums stay in excellent shape by removing plaque and stains.
+                    Regular appointments protect against gum diseases, and we provide these services with care and precision.
+                </p>
+            </div>
+            <div class="thirdImages">
+                <img src="~/images/hygine.jpg">
+            </div>
+        </div>
+        <div class="fourthText-and-image">
+            <div class="fourthImages">
+                <img src="~/images/invisalign.jpg">
+            </div>
+            <div class="fourthText">
+                <h2 class="generalHead">INVISALIGN</h2>
+                <p class="generalText">
+                    Invisalign offers a discreet and comfortable way to straighten your teeth without traditional braces.
+                    Our clear aligners are virtually invisible, allowing you to maintain your daily routine and oral hygiene with ease.
+                </p>
+            </div>
+        </div>
+        <div class="fivetext-and-image">
+            <div class="fiveText">
+                <h2 class="generalHead">INVISIBLE FILLINGS</h2>
+                <p class="generalText">
+                    Our invisible filling options use tooth-coloured materials to repair cavities and preserve the natural look of your teeth, avoiding visible metal fillings.
+                </p>
+            </div>
+            <div class="fiveImages">
+                <img src="~/images/invisible.jpg">
+            </div>
+        </div>
+        <div class="sixtext-and-image">
+            <div class="sixImages">
+                <img src="~/images/smile-makeover.jpg">
+            </div>
+            <div class="sixText">
+                <h2 class="generalHead">SMILE MAKEOVER</h2>
+                <p class="generalText">
+                    Our smile makeover services are tailored to your specific needs, whether it’s teeth whitening, tooth replacement, or other cosmetic enhancements.
+                </p>
+            </div>
+        </div>
+        <div class="seventext-and-image">
+            <div class="sevenText">
+                <h2 class="generalHead">TEETH WHITENING</h2>
+                <p class="generalText">
+                    Our teeth whitening procedures deliver great results with a focus on safety and effectiveness. You can choose between in-office and take-home whitening solutions to fit your lifestyle and preferences.
+                </p>
+            </div>
+            <div class="sevenImages">
+                <img src="~/images/whitening.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="mainContent">
+        <div class="textC-and-image">
+            <div class="textC">
+                <h2 class="generalHeadc">Contact Us</h2>
+                <p class="generalTextc"> To connect with our team for scheduling or cancelling appointments, or to inquire as a new or returning patient, please reach out to us.
+            </div>
+            <div class="dataSection">
+                <section id="contact">
+                    <div>
+                        @Html.Partial("_ContactForm")
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="final">
+        <div class="containerfooter">
+            <div class="dimension">
+                <p class="dimensionParagraph">Dare To Smile</p>
+                <p>
+                    We aim to deliver consistently high quality NHS and private dental care, in a friendly and modern environment.
+                </p>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="containercenter">
+                <p class="secondContainer">
+                    Menu
+                <p></p>
+                @Html.ActionLink("Services", "OurServicesIndex", "OurServices")
+                <p></p>
+                @Html.ActionLink("Prices ", "PricesIndex", "Prices")
+                <p></p>
+                @Html.ActionLink("Appointments", "CalendarIndex", "Calendar")
+            </div>
+            <div class="containerleft">
+                <p class="secondContainer">
+                    Contact
+                <p></p>
+                020 8653 3535
+                <p></p>
+                66 Sannicoara, Apahida, Cluj, Romania
+                <p></p>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-final">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class="divfooter">
+        <a class="space" asp-area="" asp-controller="Home" asp-action="Privacy">@Html.ActionLink("Complaints Procedure", "ComplaintsProcedureIndex", "ComplaintsProcedure")</a>
+        <a class="space" asp-area="" asp-controller="Home" asp-action="Privacy">@Html.ActionLink("Copyright (C) All Rights Reserved – Web Design by Anda Baba", "Index", "Home")</a>
+        <a class="space" asp-area="" asp-controller="Home" asp-action="Privacy">@Html.ActionLink("Privacy Policy", "PrivacyIndex", "Privacy")</a>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
+

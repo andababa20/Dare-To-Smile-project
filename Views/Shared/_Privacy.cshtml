@@ -1,0 +1,154 @@
+﻿<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/privacy.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/general.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="green">
+        <header class="header-font">
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3">
+                <div class="container-fluid">
+                    @Html.ActionLink(" ", "Index", "Home", new { }, new { @class = "img-link" })
+                    <span class="navbar-toggler-icon"></span>
+                    <div class="navbar-collapse collapse d-sm-inline-flex">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item"> @Html.ActionLink("ABOUT US", "AboutIndex", "AboutUs") </li>
+                            <li class="nav-item"> @Html.ActionLink("OUR SERVICES", "OurServicesIndex", "OurServices")</li>
+                            <li class="nav-item"> @Html.ActionLink("TEAM ", "IndexTeam", "Team") </li>
+                            <li class="nav-item"> @Html.ActionLink("PRICES ", "PricesIndex", "Prices") </li>
+                            <li class="nav-item"> @Html.ActionLink("APPOINTMENTS", "Index", "Calendar") </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="darkGray">
+        <h2>Privacy Policy</h2>
+    </div>
+    <div class="white">
+        <p>Patient Privacy and Confidentiality</p>
+        <p class="p-whiteSection">
+            The practice is committed to complying with the requirements of the legislation governing patient confidentiality including: Access to Health Records 1990, Caldicott Guidelines 1997, Confidentiality Code of Practice 1998, Data Protection Act 2018 and the GDC Standards for Dental Professionals 2005 on Principles of Patient Confidentiality. For the purpose of this policy confidential information is defined as personal information provided by an individual in confidence including, but not limited to, such details as name, age, address, personal circumstances, race, health, sexuality, etc. Note that even the fact that a patient attends the practice is confidential. This information may be supplied or stored on any medium and includes images, videos, health records, computer records or verbally.
+        </p>
+        <p class="p-whiteSection">
+            All staff members are aware of their responsibilities for safeguarding patient confidentiality and keeping information secure and have received appropriate training on the legislation requirements to ensure that:
+        <p>
+            <ul>
+                <li>
+                    No personal information given or received in confidence is passed on to anyone else without the prior consent of the information provider
+                </li>
+                <li>
+                    No personal information given or received in confidence for one purpose is used for another purpose without the prior consent of the information provider
+                </li>
+                <li>
+                    Patients are entitled to object to the use of their confidential information for any other purpose than their care
+                </li>
+                <li>
+                    The duty of confidentiality to deceased patients is treated in the same way as that of living patients
+                </li>
+                <li>
+                    The rules of disclosure are strictly followed every time information is passed on to another person or organisation.
+                </li>
+            </ul>
+        </p>
+        <p class="p-whiteSection">
+            Personal information is only disclosed to another person or organisation when:
+            <ol>
+                <li>
+                    The patient consent has been obtained
+                </li>
+                <li>
+                    The disclosure is in the patient’s best interest (referral)
+                </li>
+                <li>
+                    The information recipient falls under the category of ‘needs to know basis’ and is directly involved in patient care or the use is justified for the purposes described in the list of circumstances in the ‘Disclosure on a need to know basis’ section
+                </li>
+                <li>
+                    Disclosure is required by a court or a court order
+                </li>
+                <li>
+                    Disclosure is required by law
+                </li>
+                <li>
+                    Information is requested by the police in order to detect or prevent serious crime
+                </li>
+            </ol>
+        </p>
+        <p>
+            The practice treats breaches of confidentiality very seriously. No team member shall knowingly misuse any confidential information or allow others to do so. Non-compliance with this policy may result in a disciplinary action.
+        </p>
+        <p>
+            Dr Shaimil Patel and Shyam Shastri are the Data controllers, Caldicott Guardian and Senior Risk Information Officers responsible for keeping secure the information about you that we hold. Out Data Protection Officer is Alison Frater.
+        </p>
+    </div>
+    <div class="mainContent">
+        <div class="textC-and-image">
+            <div class="textC">
+                <h2 class="generalHeadc">Contact Us</h2>
+                <p class="generalTextc"> To connect with our team for scheduling or cancelling appointments, or to inquire as a new or returning patient, please reach out to us.
+            </div>
+            <div class="dataSection">
+                <section id="contact">
+                    <div>
+                        @Html.Partial("_ContactForm")
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="final">
+        <div class="containerfooter">
+            <div class="dimension">
+                <p class="dimensionParagraph">Dare To Smile</p>
+                <p>
+                    We aim to deliver consistently high quality NHS and private dental care, in a friendly and modern environment.
+                </p>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="containercenter">
+                <p class="secondContainer">
+                    Menu
+                <p></p>
+                @Html.ActionLink("Services", "OurServicesIndex", "OurServices")
+                <p></p>
+                @Html.ActionLink("Prices ", "PricesIndex", "Prices")
+                <p></p>
+                @Html.ActionLink("Appointments", "CalendarIndex", "Calendar")
+            </div>
+            <div class="containerleft">
+                <p class="secondContainer">
+                    Contact
+                <p></p>
+                020 8653 3535
+                <p></p>
+                66 Sannicoara, Apahida, Cluj, Romania
+                <p></p>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-final">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class="divfooter">
+        <a class="space" asp-area="" asp-controller="Home" asp-action="Privacy">@Html.ActionLink("Complaints Procedure", "ComplaintsProcedureIndex", "ComplaintsProcedure")</a>
+        <a class="space" asp-area="" asp-controller="Home" asp-action="Privacy">@Html.ActionLink("Copyright (C) All Rights Reserved – Web Design by Anda Baba", "Index", "Home")</a>
+        <a class="space" asp-area="" asp-controller="Home" asp-action="Privacy">@Html.ActionLink("Privacy Policy", "PrivacyIndex", "Privacy")</a>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
+

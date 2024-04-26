@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SmileDbModel1StoreContainer" CdmEntityContainer="SmileDbEntities1">
+    <EntitySetMapping Name="Contacts">
+      <EntityTypeMapping TypeName="SmileDbModel1.Contact">
+        <MappingFragment StoreEntitySet="Contact">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email_Address" ColumnName="Email Address" />
+          <ScalarProperty Name="Enquiry" ColumnName="Enquiry" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

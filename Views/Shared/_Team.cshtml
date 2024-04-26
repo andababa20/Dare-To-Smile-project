@@ -1,0 +1,172 @@
+﻿<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/team.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/general.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="green">
+        <header class="header-font">
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3">
+                <div class="container-fluid">
+                    @Html.ActionLink(" ", "Index", "Home", new { }, new { @class = "img-link" })
+                    <span class="navbar-toggler-icon"></span>
+                    <div class="navbar-collapse collapse d-sm-inline-flex">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item"> @Html.ActionLink("ABOUT US", "AboutIndex", "AboutUs") </li>
+                            <li class="nav-item"> @Html.ActionLink("OUR SERVICES", "OurServicesIndex", "OurServices")</li>
+                            <li class="nav-item">
+                                @Html.ActionLink("TEAM ", "IndexTeam", "Team")
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </li>
+                            <li class="nav-item"> @Html.ActionLink("PRICES ", "PricesIndex", "Prices") </li>
+                            <li class="nav-item"> @Html.ActionLink("APPOINTMENTS", "Index", "Calendar") </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="darkGray">
+        <h2>Meet The Team</h2>
+        <p class="styleP">
+            We provide care for all aspects of your dental health.
+            With our many years of experience, our team has the qualifications you’re looking for
+        </p>
+    </div>
+    <div class="grey">
+        <div class="imageTeamcontainer">
+            <img src="~/Images/bogdan.jpg" />
+            <img src="~/Images/mirela.jpg" class="teamPadding" />
+            <img src="~/Images/vlad.jpg" class="teamPadding" />
+        </div>
+        <div class="textTeamcontainer">
+            <div class="text-section">
+                <p>
+                    Dr Bogdan Petre<br />
+                    Principal Dentist<br />
+                    Cosmetic Dentist<br />
+                    Invisalign Dentist
+                </p>
+            </div>
+            <div class="text-section2">
+                <p>
+                    Dr Mirela Radu<br />
+                    Cosmetic Dentist<br />
+                    Invisalign Provider<br />
+                    Implant Surgeon
+                </p>
+            </div>
+            <div class="text-section3">
+                <p>
+                    Dr Vlad Gal<br />
+                    General Dentist<br />
+                    Invisalign Provider<br />
+                    Kids Specialist
+                </p>
+            </div>
+        </div>
+        <div class="textTeamcontainerCenter">
+            <p></p>
+            <div class="imageTeamcontainer">
+                <img src="~/Images/dan.jpg" />
+                <img src="~/Images/narcisa.jpg" class="teamPadding" />
+                <img src="~/Images/rosca.jpg" class="teamPadding" />
+            </div>
+            <div class="textTeamcontainer">
+                <div class="text-section">
+                    <p>
+                        Dr Dan Roman<br />
+                        Implant Surgeon<br />
+                        Dental Hygienist<br />
+                        Invisalign Dentist
+                    </p>
+                </div>
+                <div class="text-section2">
+                    <p>
+                        Dr Narcisa Petrache<br />
+                        General Dentist<br />
+                        Invisalign Provider<br />
+                        Ortodont
+                    </p>
+                </div>
+                <div class="text-section3">
+                    <p>
+                        Dr Rosca Mihai<br />
+                        Cosmetic Dentist<br />
+                        Invisalign Provider<br />
+                        Composite Bonding Specialist
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mainContent">
+        <div class="textC-and-image">
+            <div class="textC">
+                <h2 class="generalHeadc">Contact Us</h2>
+                <p class="generalTextc"> To connect with our team for scheduling or cancelling appointments, or to inquire as a new or returning patient, please reach out to us.
+            </div>
+            <div class="dataSection">
+                <section id="contact">
+                    <div>
+                        @Html.Partial("_ContactForm")
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="final">
+        <div class="containerfooter">
+            <div class="dimension">
+                <p class="dimensionParagraph">Dare To Smile</p>
+                <p>
+                    We aim to deliver consistently high quality NHS and private dental care, in a friendly and modern environment.
+                </p>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="containercenter">
+                <p class="secondContainer">
+                    Menu
+                <p></p>
+                @Html.ActionLink("Services", "OurServicesIndex", "OurServices")
+                <p></p>
+                @Html.ActionLink("Prices ", "PricesIndex", "Prices")
+                <p></p>
+                @Html.ActionLink("Appointments", "CalendarIndex", "Calendar")
+            </div>
+            <div class="containerleft">
+                <p class="secondContainer">
+                    Contact
+                <p></p>
+                020 8653 3535
+                <p></p>
+                66 Sannicoara, Apahida, Cluj, Romania
+                <p></p>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-final">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class="divfooter">
+        <a class="space" asp-area="" asp-controller="Home" asp-action="Privacy">@Html.ActionLink("Complaints Procedure", "ComplaintsProcedureIndex", "ComplaintsProcedure")</a>
+        <a class="space" asp-area="" asp-controller="Home" asp-action="Privacy">@Html.ActionLink("Copyright (C) All Rights Reserved – Web Design by Anda Baba", "Index", "Home")</a>
+        <a class="space" asp-area="" asp-controller="Home" asp-action="Privacy">@Html.ActionLink("Privacy Policy", "PrivacyIndex", "Privacy")</a>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
+

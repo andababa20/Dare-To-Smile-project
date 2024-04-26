@@ -1,0 +1,279 @@
+﻿<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/prices.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/general.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="green">
+        <header class="header-font">
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3">
+                <div class="container-fluid">
+                    @Html.ActionLink(" ", "Index", "Home", new { }, new { @class = "img-link" })
+                    <span class="navbar-toggler-icon"></span>
+                    <div class="navbar-collapse collapse d-sm-inline-flex">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item"> @Html.ActionLink("ABOUT US", "AboutIndex", "AboutUs") </li>
+                            <li class="nav-item"> @Html.ActionLink("OUR SERVICES", "OurServicesIndex", "OurServices") </li>
+                            <li class="nav-item"> @Html.ActionLink("TEAM ", "IndexTeam", "Team") </li>
+                            <li class="nav-item">
+                                @Html.ActionLink("PRICES ", "PricesIndex", "Prices")
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </li>
+                            <li class="nav-item"> @Html.ActionLink("APPOINTMENTS", "Index", "Calendar") </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="social">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <span class="numbers"> 0208 653 3545</span>
+        </div>
+        <div class="headText">
+            <h2 class="first-head">
+                Prices
+            </h2>
+            <p class="first-paragraph">
+                All patients are treated individually. All quotations are given on the degree of difficulty and the amount of time taken to complete the treatment.
+            </p>
+        </div>
+    </div>
+    <div class="white">
+        <H2 class="headFirst">
+            Prices Start From
+        </H2>
+        <p></p>
+        <p></p>
+        <p class="generalSection">
+            GENERAL DENTISTRY
+        </p>
+        <p class="generalTextSection">
+            Patient Exam (includes x-rays)
+            <span class="price"> €50</span>
+            <hr>
+        </p>
+        <p class="generalTextSection">
+            Emergency Consultation (includes x-rays)
+            <span class="price1"> €50</span>
+            <hr>
+        </p>
+        <p class="generalTextSection">
+            Hygiene Clean (30 min session)
+            <span class="price2"> €70</span>
+            <hr>
+        </p>
+        <p class="generalTextSection">
+            Hygiene + Airflow
+            <span class="price3"> €95</span>
+            <hr>
+        </p>
+        <p class="generalTextSection">
+            Root Canal Treatment
+            <span class="price4"> €450 - €750*</span>
+            <hr>
+        </p>
+        <p class="generalTextSection">
+            Composite Filling
+        <p class="generalTextSection1">
+            (Small)
+            <span class="price5"> €150</span><br />
+        </p>
+        <p class="generalTextSection1">
+            (Medium)
+            <span class="price6"> €190</span><br />
+        </p>
+        <p class="generalTextSection1">
+            (Large)
+            <span class="price5a"> €230</span><br />
+        </p>
+        <hr>
+        <p class="generalTextSection">
+            Crowns
+            <span class="price7"> €750*</span>
+            <hr>
+        </p>
+        <p class="generalTextSection">
+            Inlay/Onlay
+            <span class="price8"> €750</span>
+            <hr>
+        </p>
+        <p class="generalTextSection">
+            Extraction
+        <p class="generalTextSection1">
+            (Simple)
+            <span class="price5b"> €150</span><br />
+        </p>
+        <p class="generalTextSection1">
+            (Complex)
+            <span class="price6a"> €250</span><br />
+        </p>
+        <p class="generalTextSection1">
+            (Surgical)
+            <span class="price9"> €350</span><br />
+        </p>
+        <hr>
+        <p class="generalTextSection">
+            Implants
+        <p class="generalTextSection1">
+            (Single tooth with crown)
+            <span class="price10"> €2800* per arch</span><br />
+        </p>
+        <p class="generalTextSection1">
+            (Full mouth implants)
+            <span class="price11"> €12500 per arch</span><br />
+        </p>
+        <hr>
+        <p class="generalTextSection">
+            Dentures
+        <p class="generalTextSection1">
+            (Partial Acrylic)
+            <span class="price12"> €550</span><br />
+        </p>
+        <p class="generalTextSection1">
+            (Full Acrylic)
+            <span class="price13"> €700</span><br />
+        </p>
+        <p class="generalTextSection1">
+            (Flexible Acrylic)
+            <span class="price14"> €800</span><br />
+        </p>
+        <p class="generalTextSection1">
+            (Cobalt Chrome)
+            <span class="price14a"> €1200</span><br />
+        </p>
+        <hr>
+        <p class="generalTextSection">
+            Bridges
+        <p class="generalTextSection1">
+            (Porcelain Fused to Metal)
+            <span class="price15">
+                €550 per unit*
+            </span><br />
+        </p>
+        <p class="generalTextSection1">
+            (All ceramic)
+            <span class="price16">
+                €700 per unit*
+            </span><br />
+        </p>
+        <hr>
+        <p class="generalSection">
+            COSMETIC DENTISTRY
+        </p>
+        <p class="generalTextSection">
+            Invisalign – FREE Consultations
+        <p class="generalTextSection1">
+            Lite:
+            <span class="prices"> €3000</span><br />
+        </p>
+        <p class="generalTextSection1">
+            Moderate:
+            <span class="prices1"> €3400</span><br />
+        </p>
+        <p class="generalTextSection1">
+            Comprehensive:
+            <span class="prices2"> €3800 – €4500</span><br />
+        </p>
+        <p class="generalTextSection">
+            Treatment from €1500 per arch* quotations are offered after consultation depending on the severity of the individual case
+            <hr>
+        <p class="generalTextSection">
+            Composite Bonding
+            <span class="pricess0"> €200 per tooth*</span>
+            <hr>
+        </p>
+        <p class="generalTextSection">
+            Composite Veneers
+            <span class="pricess"> €300 per tooth*</span>
+            <hr>
+        </p>
+        <p class="generalTextSection">
+            Porcelain Veneers
+            <span class="pricess1"> €800 per tooth*</span>
+            <hr>
+        </p>
+        <p class="generalTextSection">
+            Home Whitening Kit
+            <span class="pricess2"> €350</span>
+            <hr>
+        </p>
+        <p class="generalTextSection">
+            Whitening Top Ups
+            <span class="pricess3"> €30 </span>
+            <hr>
+        </p>
+        <p class="generalTextSection">
+            *Treatment price varies dependent on consultation assessment 
+</div>
+    <div class="mainContent">
+        <div class="text-and-image">
+            <div class="text">
+                <h2 class="generalHead">Contact Us</h2>
+                <p class="generalText"> To connect with our team for scheduling or cancelling appointments, or to inquire as a new or returning patient, please reach out to us.
+            </div>
+            <div class="dataSection">
+                <section id="contact">
+                    <div>
+                        @Html.Partial("_ContactForm")
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="final">
+        <div class="containerfooter">
+            <div class="dimension">
+                <p class="dimensionParagraph">Dare To Smile</p>
+                <p>
+                    We aim to deliver consistently high quality NHS and private dental care, in a friendly and modern environment.
+                </p>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="containercenter">
+                <p class="secondContainer">
+                    Menu
+                <p></p>
+                @Html.ActionLink("Services", "OurServicesIndex", "OurServices")
+                <p></p>
+                @Html.ActionLink("Prices ", "PricesIndex", "Prices")
+                <p></p>
+                @Html.ActionLink("Appointments", "CalendarIndex", "Calendar")
+            </div>
+            <div class="containerleft">
+                <p class="secondContainer">
+                    Contact
+                <p></p>
+                020 8653 3535
+                <p></p>
+                66 Sannicoara, Apahida, Cluj, Romania
+                <p></p>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-final">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class="divfooter">
+        <a class="space" asp-area="" asp-controller="Home" asp-action="Privacy">@Html.ActionLink("Complaints Procedure", "ComplaintsProcedureIndex", "_ComplaintsProcedure")</a>
+        <a class="space" asp-area="" asp-controller="Home" asp-action="Privacy">@Html.ActionLink("Copyright (C) All Rights Reserved – Web Design by Anda Baba", "Index", "Home")</a>
+        <a class="space" asp-area="" asp-controller="Home" asp-action="Privacy">@Html.ActionLink("Privacy Policy", "PrivacyIndex", "Privacy")</a>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
+
